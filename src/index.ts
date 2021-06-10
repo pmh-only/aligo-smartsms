@@ -1,1 +1,1 @@
-export * from '../src/classes/Client'
+export * from './classes/Client'
