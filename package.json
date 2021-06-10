@@ -1,6 +1,6 @@
 {
   "name": "aligo-smartsms",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "node.js를 위한 알리고 스마트문자 API 래퍼 (Wrapper) ",
@@ -25,9 +25,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1"
   },
-  "files": [
-    "dist/**/*"
-  ],
   "dependencies": {
     "superagent": "^6.1.0"
   }
