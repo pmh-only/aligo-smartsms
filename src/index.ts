@@ -1,1 +1,1 @@
-export * from './classes/Client'
+export { Client } from './classes/Client'

@@ -11,7 +11,7 @@ export default class API {
       .set('Content-Type', 'application/x-www-form-urlencoded')
       .send({ key, user_id, sender, ...options })
 
-    return res.body as SendMessageResult
+    return JSON.parse(res.text) as SendMessageResult
   }
 
   public static BULK_SEND_URL = BASE_URL + '/send_mass/'
@@ -20,6 +20,6 @@ export default class API {
       .set('Content-Type', 'application/x-www-form-urlencoded')
       .send({ key, user_id, sender, ...options })
 
-    return res.body as SendMessageResult
+    return JSON.parse(res.text) as SendMessageResult
   }
 }

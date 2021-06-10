@@ -62,7 +62,7 @@ var API = /** @class */ (function () {
                             .send(__assign({ key: key, user_id: user_id, sender: sender }, options))];
                     case 1:
                         res = _a.sent();
-                        return [2 /*return*/, res.body];
+                        return [2 /*return*/, JSON.parse(res.text)];
                 }
             });
         });
@@ -77,7 +77,7 @@ var API = /** @class */ (function () {
                             .send(__assign({ key: key, user_id: user_id, sender: sender }, options))];
                     case 1:
                         res = _a.sent();
-                        return [2 /*return*/, res.body];
+                        return [2 /*return*/, JSON.parse(res.text)];
                 }
             });
         });
