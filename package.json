@@ -1,6 +1,6 @@
 {
   "name": "aligo-smartsms",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "node.js를 위한 알리고 스마트문자 API 래퍼 (Wrapper) ",
