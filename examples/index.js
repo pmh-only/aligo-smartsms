@@ -9,8 +9,11 @@ const client = new Client({
   user_id: process.env.USER_ID,
 })
 
-client.sendMessages({
-  msg: 'test',
-  receiver: '01055446082',
+client.bulkSendMessages({
+  cnt: 1,
+  msg: [{
+    receiver: '01055446082',
+    content: 'test'
+  }],
   msg_type: 'SMS'
 }).then(console.log)

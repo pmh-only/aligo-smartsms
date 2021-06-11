@@ -83,7 +83,7 @@ export interface BulkSendMessageOptions {
   msg_type: MessageType
 
   /** 메세지 전송건수(번호,메세지 매칭건수) */
-  cnt: number
+  cnt?: number
 
   /** 문자제목(LMS,MMS만 허용) */
   title?: string

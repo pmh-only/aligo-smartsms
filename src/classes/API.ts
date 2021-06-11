@@ -16,7 +16,7 @@ export default class API {
 
   public static BULK_SEND_URL = BASE_URL + '/send_mass/'
   public static async BulkSend (key: string, user_id: string, sender: string, options: BulkSendMessageOptionsRaw) {
-    const res = await post(this.SEND_URL)
+    const res = await post(this.BULK_SEND_URL)
       .set('Content-Type', 'application/x-www-form-urlencoded')
       .send({ key, user_id, sender, ...options })
 

@@ -41,11 +41,13 @@ var Client = /** @class */ (function () {
      */
     Client.prototype.bulkSendMessages = function (options) {
         var optionsRaw = options;
+        if (!options.cnt)
+            options.cnt = options.msg.length;
         if (options.cnt > 500)
             throw new Error('최대 전송 가능 수신자수 5백명을 넘김');
         for (var i = 1; i <= optionsRaw.cnt; i++) {
-            optionsRaw['msg_' + i] = options.msg[i].content;
-            optionsRaw['rec_' + i] = options.msg[i].receiver;
+            optionsRaw['msg_' + i] = options.msg[i - 1].content;
+            optionsRaw['rec_' + i] = options.msg[i - 1].receiver;
         }
         return API_1.default.BulkSend(this.key, this.user_id, this.sender, optionsRaw);
     };

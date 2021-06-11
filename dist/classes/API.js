@@ -72,7 +72,7 @@ var API = /** @class */ (function () {
             var res;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, superagent_1.post(this.SEND_URL)
+                    case 0: return [4 /*yield*/, superagent_1.post(this.BULK_SEND_URL)
                             .set('Content-Type', 'application/x-www-form-urlencoded')
                             .send(__assign({ key: key, user_id: user_id, sender: sender }, options))];
                     case 1:

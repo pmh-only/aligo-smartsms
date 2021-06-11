@@ -60,7 +60,7 @@ export interface BulkSendMessageOptions {
     /** SMS(단문) , LMS(장문), MMS(그림문자) 구분 */
     msg_type: MessageType;
     /** 메세지 전송건수(번호,메세지 매칭건수) */
-    cnt: number;
+    cnt?: number;
     /** 문자제목(LMS,MMS만 허용) */
     title?: string;
     /** 예약일 (현재일이상) */
